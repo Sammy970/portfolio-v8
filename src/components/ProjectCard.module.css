@@ -1,0 +1,143 @@
+.image10Icon,
+.maskGroup {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-3xl);
+}
+.image10Icon {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.maskGroup {
+  background-color: var(--color-gainsboro);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0.65;
+  mix-blend-mode: normal;
+}
+.maskGroup:hover {
+  opacity: 100%;
+}
+.pcbDefectDetection,
+.pcbDefectDetection1 {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+}
+.pcbDefectDetection1 {
+  display: none;
+  cursor: pointer;
+}
+.pcbDefectDetection2 {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.pcbDefectDetectionSystemUsWrapper {
+  align-self: stretch;
+  border-radius: var(--br-lg);
+  background-color: var(--color-gray-400);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-6xs) var(--padding-9xs);
+  align-items: flex-start;
+  justify-content: center;
+  mix-blend-mode: normal;
+  text-align: justify;
+  font-size: var(--font-size-base);
+  color: var(--color-turquoise);
+  font-family: var(--font-roboto);
+}
+.pcbDefectDetectionUsingYolParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--gap-5xs);
+  mix-blend-mode: normal;
+}
+.projectcard,
+.topprojectcard {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topprojectcard {
+  flex-direction: row;
+  padding: 0 var(--padding-17xs) 0 0;
+  gap: var(--gap-2xl);
+  mix-blend-mode: normal;
+}
+.projectcard {
+  flex-direction: column;
+  text-align: right;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--heading);
+}
+@media screen and (max-width: 1200px) {
+  .maskGroup {
+    margin-top: 55px;
+  }
+  .pcbDefectDetection,
+  .pcbDefectDetection1 {
+    font-size: var(--font-size-3xl);
+  }
+  .pcbDefectDetection2 {
+    font-size: var(--font-size-2xs);
+  }
+  .projectcard {
+    gap: var(--gap-7xl);
+  }
+}
+@media screen and (max-width: 960px) {
+  .maskGroup {
+    display: none;
+  }
+  .pcbDefectDetection,
+  .pcbDefectDetection1 {
+    font-size: var(--font-size-3xl);
+    text-align: center;
+  }
+  .pcbDefectDetection {
+    display: none;
+  }
+  .pcbDefectDetection1 {
+    display: flex;
+  }
+  .pcbDefectDetectionUsingYolParent {
+    gap: var(--gap-sm);
+    margin-left: 0 !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  .pcbDefectDetection,
+  .pcbDefectDetection1 {
+    font-weight: 600;
+    font-family: var(--heading);
+    font-size: var(--font-size-sm);
+    text-align: center;
+  }
+  .pcbDefectDetection {
+    display: none;
+  }
+  .pcbDefectDetection1 {
+    display: flex;
+  }
+  .pcbDefectDetection2 {
+    font-size: var(--font-size-8xs);
+    text-align: justify;
+  }
+  .topprojectcard {
+    padding-left: var(--padding-sm);
+    padding-right: var(--padding-sm);
+    box-sizing: border-box;
+  }
+}

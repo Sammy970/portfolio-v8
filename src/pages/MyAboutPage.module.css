@@ -1,0 +1,115 @@
+.aboutMe {
+  align-self: stretch;
+  position: relative;
+}
+.image6Icon {
+  position: relative;
+  width: 348px;
+  height: 34px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.headingText {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.iAmCurrently {
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+}
+.instrumentationAndControl,
+.vishwakarmaInstituteOf {
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: var(--color-lightpink);
+}
+.instrumentationAndControl {
+  color: var(--color-palegreen);
+}
+.iAmCurrentlyA3rdYearEngi {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.besidesThisILikeToIndulg {
+  margin: 0;
+}
+.iAmCurrentlyContainer {
+  flex: 1;
+  position: relative;
+  line-height: 136.5%;
+}
+.abouttext {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  font-size: var(--achievementscontent-size);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}
+.aboutpage,
+.myaboutpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutpage {
+  align-self: stretch;
+  background-color: var(--color-gray-200);
+  overflow: hidden;
+  padding: var(--padding-5xl) 125px;
+  justify-content: center;
+  gap: 83px;
+}
+.myaboutpage {
+  position: relative;
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--heading-size);
+  color: var(--color-lightpink);
+  font-family: var(--heading);
+}
+@media screen and (max-width: 1200px) {
+  .iAmCurrentlyContainer {
+    font-size: var(--font-size-base);
+  }
+  .aboutpage {
+    padding-left: var(--padding-12xl);
+    padding-right: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 960px) {
+  .iAmCurrentlyContainer {
+    font-size: var(--font-size-xs);
+  }
+  .aboutpage {
+    padding-left: var(--padding-10xl);
+    padding-right: var(--padding-10xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .aboutMe {
+    font-size: var(--font-size-5xl);
+  }
+  .image6Icon {
+    max-width: 200px;
+    height: auto;
+  }
+  .iAmCurrentlyContainer {
+    font-size: var(--font-size-6xs);
+  }
+  .aboutpage {
+    gap: var(--gap-7xl);
+    padding-left: var(--padding-8xs);
+    padding-right: var(--padding-8xs);
+    box-sizing: border-box;
+  }
+}

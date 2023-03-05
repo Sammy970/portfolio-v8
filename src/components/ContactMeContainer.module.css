@@ -1,0 +1,168 @@
+.image4Icon {
+  position: relative;
+  width: 62.67px;
+  height: 64.48px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.iconssocial,
+.linkedinIcon {
+  position: relative;
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+}
+.iconssocial {
+  display: none;
+}
+.linkedinIcon {
+  overflow: hidden;
+}
+.github,
+.linkedin {
+  position: relative;
+  font-size: var(--font-size-3xs);
+  font-family: var(--heading);
+  color: var(--color-gray-200);
+  text-align: left;
+}
+.github {
+  display: none;
+}
+.linkedinbtn,
+.mediumIcon {
+  border-radius: var(--br-2xs);
+}
+.mediumIcon {
+  position: relative;
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: none;
+}
+.linkedinbtn {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-15xs) var(--padding-8xs);
+  background-color: var(--color-lightpink);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.linkedinIcon1 {
+  position: relative;
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: none;
+}
+.mediumIcon1,
+.mediumbtn {
+  border-radius: var(--br-2xs);
+}
+.mediumIcon1 {
+  position: relative;
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.mediumbtn {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-15xs) var(--padding-8xs);
+  background-color: var(--color-lightpink);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.iconssocial2,
+.image5Icon {
+  position: relative;
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+}
+.image5Icon {
+  width: 62.25px;
+  height: 64.45px;
+  object-fit: cover;
+}
+.finalContactMeSection,
+.finalContactMeSectionInner,
+.image4Parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.image4Parent {
+  flex: 1;
+  padding: 0 var(--padding-13xl);
+  gap: var(--gap-9xl);
+}
+.finalContactMeSection,
+.finalContactMeSectionInner {
+  overflow: hidden;
+}
+.finalContactMeSectionInner {
+  flex: 1;
+  padding: var(--padding-2xl) var(--padding-15xl);
+}
+.finalContactMeSection {
+  align-self: stretch;
+  background-color: var(--color-gray-200);
+}
+@media screen and (max-width: 1200px) {
+  .image4Icon,
+  .image5Icon {
+    display: none;
+  }
+  .image4Parent {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 960px) {
+  .image4Parent {
+    gap: var(--gap-2xl);
+    padding-left: var(--padding-13xl);
+    box-sizing: border-box;
+  }
+  .finalContactMeSection {
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .image4Icon,
+  .image5Icon {
+    display: flex;
+    transform: rotate(-290deg);
+  }
+  .linkedinbtn:hover,
+  .mediumbtn:hover {
+    background-color: var(--color-palegreen);
+  }
+  .finalContactMeSectionInner {
+    flex: unset;
+    align-self: stretch;
+  }
+  .finalContactMeSection {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+}

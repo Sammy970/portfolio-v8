@@ -1,0 +1,34 @@
+.certificatesPortfolio21 {
+  position: relative;
+  width: 392px;
+  height: 567px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.sketchcertificate {
+  position: relative;
+  width: 397px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+@media screen and (max-width: 1200px) {
+  .certificatesPortfolio21 {
+    max-width: 65%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 960px) {
+  .certificatesPortfolio21 {
+    max-width: 65%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .certificatesPortfolio21 {
+    max-width: 75%;
+  }
+}

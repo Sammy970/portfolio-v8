@@ -1,0 +1,113 @@
+.collegeImageIcon {
+  position: relative;
+  width: 151px;
+  height: 151px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.branchName,
+.collegeName {
+  align-self: stretch;
+  position: relative;
+}
+.collegeName {
+  font-size: var(--font-size-5xl);
+}
+.branchName {
+  text-align: justify;
+}
+.branchNameFor {
+  display: none;
+}
+.branchNameFor,
+.year {
+  align-self: stretch;
+  position: relative;
+}
+.collegeDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.educationCards,
+.educationcards {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.educationCards {
+  border-radius: var(--br-md);
+  background: linear-gradient(180deg, #1b2d3a, rgba(27, 45, 58, 0));
+  border: 1px solid var(--color-palegreen);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-xl);
+  gap: var(--gap-sm);
+}
+.educationcards {
+  flex-direction: column;
+  gap: var(--gap-8xl);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 1200px) {
+  .collegeName {
+    font-size: var(--font-size-4xl);
+  }
+  .branchName,
+  .branchNameFor,
+  .year {
+    font-size: var(--font-size-2xs);
+  }
+}
+@media screen and (max-width: 960px) {
+  .collegeName {
+    font-size: var(--achievementscontent-size);
+  }
+  .branchName,
+  .branchNameFor,
+  .year {
+    font-size: var(--font-size-4xs);
+  }
+}
+@media screen and (max-width: 420px) {
+  .collegeImageIcon {
+    max-width: 30%;
+    height: auto;
+  }
+  .collegeName {
+    font-size: var(--font-size-3xs);
+    text-align: left;
+  }
+  .branchName,
+  .branchNameFor {
+    font-size: var(--font-size-9xs);
+    text-align: justify;
+  }
+  .branchName {
+    display: none;
+  }
+  .branchNameFor {
+    font-weight: 700;
+    font-family: var(--font-roboto);
+    display: flex;
+  }
+  .year {
+    font-size: var(--font-size-8xs);
+  }
+  .collegeDetails {
+    gap: var(--gap-11xs);
+  }
+  .educationCards {
+    gap: var(--gap-8xs);
+    border-radius: var(--br-xs);
+    padding: var(--padding-8xs);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,121 @@
+.heyIm {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.samyakJain {
+  margin: 0;
+}
+.currentlyAStudent,
+.heyImSamyakContainer {
+  align-self: stretch;
+  position: relative;
+}
+.currentlyAStudent {
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+}
+.heyImSamyakJainParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-10xs);
+}
+.heroSectionChild,
+.image3Icon {
+  position: relative;
+  width: 151.32px;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+  max-width: 50%;
+}
+.heroSectionChild {
+  width: 352px;
+}
+.heroSection {
+  align-self: stretch;
+  border-radius: 44.26px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-2xl) 0 var(--padding-17xs);
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+}
+.finalHeroSection,
+.myhomepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.finalHeroSection {
+  align-self: stretch;
+  background-color: var(--color-gray-200);
+  padding: 0 var(--padding-8xl) 44px;
+  align-items: center;
+}
+.myhomepage {
+  position: relative;
+  width: 100%;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--heading-size);
+  color: var(--color-lightpink);
+  font-family: var(--heading);
+}
+@media screen and (max-width: 1200px) {
+  .heyImSamyakJainParent {
+    flex: unset;
+    align-self: stretch;
+  }
+  .image3Icon {
+    transform: rotate(-290deg);
+    max-width: 120px;
+    height: auto;
+  }
+  .heroSectionChild {
+    max-width: 50%;
+    height: auto;
+  }
+  .heroSection {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 960px) {
+  .image3Icon {
+    transform: rotate(-290deg);
+    max-width: 120px;
+  }
+  .finalHeroSection {
+    padding-left: var(--padding-md);
+    padding-right: var(--padding-md);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .heyImSamyakContainer {
+    font-size: var(--font-size-4xl);
+  }
+  .currentlyAStudent {
+    font-size: var(--font-size-2xs);
+    text-align: left;
+    color: var(--color-white);
+  }
+  .heyImSamyakJainParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .image3Icon {
+    max-width: 90px;
+  }
+  .finalHeroSection {
+    padding-left: var(--padding-8xs);
+    padding-right: var(--padding-8xs);
+    box-sizing: border-box;
+  }
+}

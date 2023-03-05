@@ -1,0 +1,76 @@
+.date {
+  text-align: left;
+}
+.blogShortDesc,
+.blogTitle,
+.date {
+  align-self: stretch;
+  position: relative;
+}
+.blogTitle {
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  font-family: var(--heading);
+}
+.blogShortDesc {
+  font-size: var(--font-size-2xs);
+  font-family: var(--font-roboto);
+}
+.githubIcon,
+.mediumIcon {
+  position: relative;
+  border-radius: var(--br-2xs);
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.githubIcon {
+  display: none;
+}
+.readMore1 {
+  position: relative;
+  font-size: var(--font-size-3xs);
+  font-family: var(--heading);
+  color: var(--color-gray-200);
+  text-align: left;
+}
+.blogcard,
+.readMore {
+  display: flex;
+  justify-content: flex-start;
+}
+.readMore {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-15xs) var(--padding-8xs);
+  background-color: var(--color-palegreen);
+  border-radius: var(--br-2xs);
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-11xs);
+}
+.blogcard {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+  text-align: justify;
+  font-size: var(--font-size-5xs);
+  color: var(--color-white);
+  font-family: var(--achievementscontent);
+}
+@media screen and (max-width: 420px) {
+  .blogShortDesc,
+  .blogTitle {
+    font-size: var(--font-size-2xs);
+    text-align: justify;
+  }
+  .blogShortDesc {
+    font-size: var(--font-size-6xs);
+  }
+  .blogcard {
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+}

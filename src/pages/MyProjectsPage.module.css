@@ -1,0 +1,197 @@
+.projects {
+  align-self: stretch;
+  position: relative;
+}
+.image6Icon {
+  position: relative;
+  width: 348px;
+  height: 34px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.projectsParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.image16Icon,
+.maskGroup {
+  flex: 1;
+  border-radius: var(--br-3xl);
+}
+.image16Icon {
+  position: relative;
+  max-height: 100%;
+  width: 285px;
+  object-fit: cover;
+}
+.maskGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.65;
+  mix-blend-mode: normal;
+}
+.maskGroup:hover {
+  opacity: 100%;
+}
+.maskGroup,
+.smartDustbin {
+  align-self: stretch;
+}
+.designedASmart,
+.smartDustbin,
+.smartDustbin1 {
+  position: relative;
+  font-weight: 600;
+}
+.smartDustbin1 {
+  align-self: stretch;
+  display: none;
+  cursor: pointer;
+}
+.designedASmart {
+  flex: 1;
+}
+.designedASmartDustbinThatWrapper,
+.smartDustbinParent {
+  display: flex;
+  justify-content: center;
+  mix-blend-mode: normal;
+}
+.designedASmartDustbinThatWrapper {
+  align-self: stretch;
+  border-radius: var(--br-lg);
+  background-color: var(--color-gray-400);
+  flex-direction: row;
+  padding: var(--padding-6xs) var(--padding-9xs);
+  align-items: flex-start;
+  text-align: justify;
+  font-size: var(--font-size-base);
+  color: var(--color-turquoise);
+  font-family: var(--font-roboto);
+}
+.smartDustbinParent {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-5xs);
+}
+.projectcard,
+.topprojectcard {
+  align-self: stretch;
+  justify-content: center;
+}
+.topprojectcard {
+  display: flex;
+  flex-direction: row;
+  padding: 0 var(--padding-17xs) 0 0;
+  align-items: center;
+  gap: var(--gap-2xl);
+  mix-blend-mode: normal;
+}
+.projectcard {
+  text-align: right;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+}
+.finalProjects,
+.myprojectspage,
+.projectcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.finalProjects {
+  align-self: stretch;
+  background-color: var(--color-gray-200);
+  padding: var(--padding-5xl) var(--padding-14xl);
+  justify-content: center;
+  gap: var(--gap-10xl);
+}
+.myprojectspage {
+  position: relative;
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--heading-size);
+  color: var(--color-lightpink);
+  font-family: var(--heading);
+}
+@media screen and (max-width: 1200px) {
+  .maskGroup {
+    margin-top: 55px;
+  }
+  .smartDustbin,
+  .smartDustbin1 {
+    font-size: var(--font-size-3xl);
+  }
+  .designedASmart {
+    font-size: var(--font-size-2xs);
+  }
+  .projectcard {
+    gap: var(--gap-7xl);
+  }
+  .finalProjects {
+    gap: var(--gap-10xl);
+  }
+}
+@media screen and (max-width: 960px) {
+  .maskGroup {
+    display: none;
+  }
+  .smartDustbin,
+  .smartDustbin1 {
+    font-size: var(--font-size-3xl);
+    text-align: center;
+  }
+  .smartDustbin {
+    display: none;
+  }
+  .smartDustbin1 {
+    display: flex;
+  }
+  .smartDustbinParent {
+    gap: var(--gap-sm);
+    margin-left: 0 !important;
+  }
+  .finalProjects {
+    padding-left: var(--padding-14xl);
+    padding-right: var(--padding-14xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .projects {
+    font-size: var(--font-size-5xl);
+  }
+  .image6Icon {
+    max-width: 200px;
+    height: auto;
+  }
+  .smartDustbin,
+  .smartDustbin1 {
+    font-weight: 600;
+    font-family: var(--heading);
+    font-size: var(--font-size-sm);
+    text-align: center;
+  }
+  .designedASmart {
+    font-size: var(--font-size-8xs);
+    text-align: justify;
+  }
+  .finalProjects,
+  .topprojectcard {
+    padding-left: var(--padding-sm);
+    padding-right: var(--padding-sm);
+    box-sizing: border-box;
+  }
+  .finalProjects {
+    gap: var(--gap-sm);
+    padding-left: var(--padding-8xs);
+    padding-right: var(--padding-8xs);
+  }
+}

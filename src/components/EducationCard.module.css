@@ -1,0 +1,90 @@
+.collegeImageIcon {
+  position: relative;
+  width: 151px;
+  height: 151px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.collegeName {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-5xl);
+}
+.branchName {
+  text-align: justify;
+}
+.branchName,
+.year {
+  align-self: stretch;
+  position: relative;
+}
+.collegeDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.educationCards {
+  align-self: stretch;
+  border-radius: var(--br-md);
+  background: linear-gradient(180deg, #1b2d3a, rgba(27, 45, 58, 0));
+  border: 1px solid var(--color-palegreen);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-xl);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-sm);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 1200px) {
+  .collegeName {
+    font-size: var(--font-size-4xl);
+  }
+  .branchName,
+  .year {
+    font-size: var(--font-size-2xs);
+  }
+}
+@media screen and (max-width: 960px) {
+  .collegeName {
+    font-size: var(--achievementscontent-size);
+  }
+  .branchName,
+  .year {
+    font-size: var(--font-size-4xs);
+  }
+}
+@media screen and (max-width: 420px) {
+  .collegeImageIcon {
+    max-width: 30%;
+    height: auto;
+  }
+  .collegeName {
+    font-size: var(--font-size-3xs);
+    text-align: left;
+  }
+  .branchName {
+    font-size: var(--font-size-9xs);
+    text-align: justify;
+    display: flex;
+  }
+  .year {
+    font-size: var(--font-size-8xs);
+  }
+  .collegeDetails {
+    gap: var(--gap-11xs);
+  }
+  .educationCards {
+    gap: var(--gap-8xs);
+    border-radius: var(--br-xs);
+    padding: var(--padding-8xs);
+    box-sizing: border-box;
+  }
+}

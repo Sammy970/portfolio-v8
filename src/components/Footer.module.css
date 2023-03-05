@@ -1,0 +1,176 @@
+.samyakjainIcon {
+  width: 174px;
+  height: 38px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.copyrightInformation,
+.samyakjainIcon {
+  position: relative;
+}
+.footerLinks,
+.samyakjainParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.samyakjainParent {
+  align-items: center;
+  gap: var(--gap-4xs);
+}
+.footerLinks {
+  align-items: flex-start;
+}
+.groupIcon {
+  position: absolute;
+  height: 62.21%;
+  width: 64.15%;
+  top: 20.83%;
+  right: 19.19%;
+  bottom: 16.96%;
+  left: 16.67%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.github {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-gray-300);
+  position: relative;
+  border-radius: var(--br-4xl);
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.groupIcon1 {
+  position: absolute;
+  height: 33.58%;
+  width: 59.03%;
+  top: 33.33%;
+  right: 20.14%;
+  bottom: 33.08%;
+  left: 20.83%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.linkedinChild,
+.medium {
+  border-radius: var(--br-4xl);
+}
+.medium {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-black);
+  position: relative;
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.linkedinChild {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-dodgerblue);
+}
+.linkedinLogoIcon {
+  position: absolute;
+  height: 58.33%;
+  width: 58.33%;
+  top: 20.83%;
+  right: 20.83%;
+  bottom: 20.83%;
+  left: 20.83%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.linkedin {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+}
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-6xs);
+}
+.samyakJain {
+  position: relative;
+  font-size: var(--font-size-6xs);
+  font-family: var(--heading);
+  color: var(--color-palegreen);
+  text-align: center;
+  display: none;
+}
+.footer,
+.footerLinksParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footerLinksParent {
+  flex: 1;
+  justify-content: space-between;
+}
+.footer {
+  align-self: stretch;
+  background-color: var(--color-gray-200);
+  padding: var(--padding-xs) var(--padding-md);
+  justify-content: center;
+  text-align: left;
+  font-size: var(--font-size-7xs);
+  color: var(--color-lightslategray);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 1200px) {
+  .copyrightInformation {
+    display: none;
+  }
+  .footer {
+    padding: var(--padding-2xs) var(--padding-9xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 960px) {
+  .copyrightInformation {
+    text-align: center;
+    display: none;
+  }
+  .footerLinks {
+    display: none;
+  }
+  .samyakJain {
+    display: flex;
+  }
+  .footerLinksParent {
+    flex-direction: column;
+    gap: var(--gap-9xs);
+  }
+  .footer {
+    padding: var(--padding-3xs) var(--padding-md);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footer {
+    padding: var(--padding-4xs) var(--padding-7xs);
+    box-sizing: border-box;
+  }
+}

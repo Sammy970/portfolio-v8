@@ -1,0 +1,179 @@
+.achievements {
+  align-self: stretch;
+  position: relative;
+}
+.achievementsWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--heading-size);
+  color: var(--color-lightpink);
+  font-family: var(--heading);
+}
+.b,
+.frameChild {
+  position: relative;
+}
+.frameChild {
+  border-right: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 1px;
+  height: 335px;
+  flex-shrink: 0;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-md);
+}
+.learntReactjsBasics,
+.presentMyPaper {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+}
+.learntReactjsBasics {
+  cursor: pointer;
+}
+.presentMyPaperInIeeeConfeParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-3xl);
+  text-align: left;
+  font-size: var(--achievementscontent-size);
+}
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-14xs);
+}
+.b1 {
+  position: relative;
+}
+.frameInner,
+.frameItem,
+.lineDiv {
+  position: relative;
+  border-right: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 1px;
+  height: 177px;
+  flex-shrink: 0;
+}
+.frameInner,
+.lineDiv {
+  height: 206px;
+}
+.lineDiv {
+  height: 210px;
+}
+.parent1 {
+  height: 294px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-md);
+}
+.winnerIn9thTechnoGurupoornParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-3xl);
+  text-align: left;
+  font-size: var(--achievementscontent-size);
+}
+.b4,
+.frameChild1 {
+  position: relative;
+}
+.frameChild1 {
+  border-right: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 1px;
+  height: 212px;
+  flex-shrink: 0;
+}
+.achievementspage,
+.myachievementspage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.achievementspage {
+  align-self: stretch;
+  background-color: var(--color-gray-200);
+  overflow: hidden;
+  padding: var(--padding-5xl) var(--padding-11xl);
+  align-items: flex-start;
+  gap: 74px;
+}
+.myachievementspage {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  font-size: var(--font-size-6xl);
+  color: var(--color-white);
+  font-family: var(--achievementscontent);
+}
+@media screen and (max-width: 1200px) {
+  .learntReactjsBasics,
+  .presentMyPaper {
+    font-size: var(--font-size-base);
+  }
+}
+@media screen and (max-width: 960px) {
+  .b {
+    font-size: var(--font-size-4xl);
+  }
+  .learntReactjsBasics,
+  .presentMyPaper {
+    font-size: var(--font-size-xs);
+  }
+  .b1,
+  .b4 {
+    font-size: var(--font-size-4xl);
+  }
+  .achievementspage {
+    padding-left: var(--padding-7xl);
+    padding-right: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .achievements {
+    font-size: var(--font-size-5xl);
+  }
+  .learntReactjsBasics,
+  .presentMyPaper {
+    font-size: var(--font-size-6xs);
+  }
+  .presentMyPaperInIeeeConfeParent {
+    gap: var(--gap-lg);
+  }
+  .b1 {
+    font-size: var(--font-size-4xl);
+  }
+  .winnerIn9thTechnoGurupoornParent {
+    gap: var(--gap-lg);
+  }
+  .achievementspage {
+    padding-left: var(--padding-md);
+    padding-right: var(--padding-md);
+    box-sizing: border-box;
+  }
+}

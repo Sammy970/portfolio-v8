@@ -1,0 +1,191 @@
+.courses {
+  align-self: stretch;
+  position: relative;
+}
+.image6Icon {
+  position: relative;
+  width: 235px;
+  height: 25px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.coursesParent,
+.coursespageInner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.image2Icon {
+  align-self: stretch;
+  position: relative;
+  border-radius: var(--br-xs) var(--br-xs) 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 213px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.introductionToFrontEnd {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-2xs);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: var(--color-darkslategray-100);
+  text-align: left;
+}
+.introductionToFrontEndDeveWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ongoing {
+  position: relative;
+  font-size: var(--font-size-2xs);
+  line-height: 34px;
+  font-family: var(--font-baloo-bhai);
+  color: var(--color-cornflowerblue);
+  text-align: right;
+}
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-7xs);
+}
+.holidayDetails,
+.recCard3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.holidayDetails {
+  align-self: stretch;
+  border-radius: 0 0 var(--br-xs) var(--br-xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-whitesmoke);
+  padding: var(--padding-8xs) var(--padding-10xs);
+  justify-content: center;
+}
+.recCard3 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 25%;
+  flex-shrink: 0;
+  justify-content: flex-start;
+}
+.image2Icon1 {
+  align-self: stretch;
+  position: relative;
+  border-radius: var(--br-xs) var(--br-xs) 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 213px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.recCard3Parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-13xl);
+}
+.ongoing2 {
+  position: relative;
+  font-size: var(--font-size-2xs);
+  line-height: 34px;
+  font-family: var(--font-baloo-bhai);
+  color: var(--color-cornflowerblue);
+  text-align: left;
+  display: inline-block;
+  width: 185px;
+}
+.coursespage,
+.mycoursespage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.coursespage {
+  align-self: stretch;
+  background-color: var(--color-gray-200);
+  overflow: hidden;
+  padding: var(--padding-5xl) var(--padding-11xl);
+  justify-content: center;
+  gap: var(--gap-4xl);
+}
+.mycoursespage {
+  position: relative;
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--heading-size);
+  color: var(--color-lightpink);
+  font-family: var(--heading);
+}
+@media screen and (max-width: 1200px) {
+  .coursespageInner {
+    padding-left: 180px;
+    box-sizing: border-box;
+  }
+  .recCard3Parent {
+    gap: var(--gap-11xl);
+  }
+  .coursespage {
+    padding-left: var(--padding-7xs);
+    padding-right: var(--padding-7xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 960px) {
+  .coursespageInner {
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+  .recCard3 {
+    width: 50%;
+    margin-bottom: 32px;
+  }
+  .recCard3Parent {
+    flex-direction: row;
+    gap: var(--gap-7xl);
+  }
+  .coursespage {
+    padding-left: var(--padding-11xl);
+    padding-right: var(--padding-11xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .courses {
+    font-size: var(--font-size-5xl);
+  }
+  .image6Icon {
+    max-width: 100px;
+    height: auto;
+  }
+  .recCard3 {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .recCard3Parent {
+    flex-direction: column;
+  }
+  .coursespage {
+    gap: var(--gap-4xl);
+    padding-left: var(--padding-3xl);
+    padding-right: var(--padding-3xl);
+    box-sizing: border-box;
+  }
+}
